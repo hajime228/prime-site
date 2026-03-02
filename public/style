@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #4f8190;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+.left { width: 50%; }
+.right { width: 50%; }
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.slot {
+    height: 80px;
+    background: #5d93b0;
+    cursor: pointer;
+}
+
+.slot.busy {
+    background: #c94c4c;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+}
