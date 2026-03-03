@@ -1,49 +1,127 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #4f8190;
-    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    color: #222;
 }
+
+/* HEADER */
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1f2d3d;
+    color: white;
 }
 
-button {
-    padding: 10px 15px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.admin-btn {
+    padding: 8px 14px;
+    background: #ff9800;
+    border: none;
     cursor: pointer;
+    border-radius: 6px;
 }
 
-.main {
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* MAIN CONTENT */
+
+.content {
     display: flex;
-    padding: 20px;
+    gap: 40px;
+    padding: 40px;
 }
 
-.left { width: 50%; }
-.right { width: 50%; }
+.slots-section, .map-section {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* SLOTS */
 
 .slots {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .slot {
-    height: 80px;
-    background: #5d93b0;
+    height: 90px;
+    border-radius: 10px;
+    background: #e0e7ff;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.slot:hover {
+    transform: scale(1.05);
 }
 
 .slot.busy {
-    background: #c94c4c;
+    background: #ef4444;
 }
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 20px;
+    border-radius: 4px;
+}
+
+.free {
+    background: #e0e7ff;
+}
+
+.busy {
+    background: #ef4444;
+}
+
+/* MAP */
 
 .map-container {
     width: 100%;
     height: 400px;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 #map {
@@ -51,4 +129,21 @@ button {
     height: 100%;
     object-fit: contain;
     user-select: none;
+}
+
+/* INFO SECTIONS */
+
+.info-section {
+    padding: 60px 40px;
+    background: white;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2d3d;
+    color: white;
 }
