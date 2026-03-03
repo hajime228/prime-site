@@ -1,51 +1,51 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<title>Прайм Плюс</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
 <header>
-    <div class="logo">Прайм Плюс</div>
+    <h1>Прайм Плюс</h1>
     <nav>
-        <a onclick="openModal('about')">О компании</a>
-        <a onclick="openModal('prices')">Тарифы</a>
-        <a onclick="openModal('contacts')">Контакты</a>
-        <a onclick="adminLogin()">Админ</a>
+        <a href="#">О компании</a>
+        <a href="#">Тарифы</a>
+        <a href="#">Контакты</a>
+        <a href="#">Админ</a>
     </nav>
 </header>
 
-<div class="main">
+<div class="container">
+    <div class="main">
 
-<div class="left">
-    <h2>Размещение рекламы внутри подъездов</h2>
-    <p>Продвигайте бизнес быстро и эффективно.</p>
+        <div class="left">
+            <h2>Размещение рекламы внутри подъездов</h2>
+            <p>Продвигайте бизнес быстро и эффективно.</p>
+            <p><strong>Формат рекламы: 16 слотов формата A5</strong></p>
 
-    <h3>Формат рекламы: 16 слотов формата А5</h3>
+            <div class="slots">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+        </div>
 
-    <div class="slots" id="slots"></div>
-</div>
+        <div class="right">
+            <h3 style="margin-bottom:15px;">Зона покрытия</h3>
+            <div class="map-wrapper">
+                <img src="img/map.png" alt="Карта">
+            </div>
+        </div>
 
-<div class="right">
-    <h3>Зона покрытия</h3>
-    <div class="map-container">
-        <img src="map.jpg" id="map" draggable="false">
     </div>
 </div>
 
-</div>
-
-<div class="modal" id="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">X</span>
-        <div id="modal-text"></div>
-    </div>
-</div>
-
-<script src="script.js"></script>
 </body>
-</html>
